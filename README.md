@@ -13,8 +13,9 @@
 
 You are now in the docker console
 
-3. run: `bundle install`
-4. you will need to remove the test model: `rails d model test_model`
-5. run: `rails db:create && rails db:migrate`
-6. make sure to commit the removal of the test_model
-7. run rails s -b \`hostname -i\`
+3. run: cp .env.example .env
+4. run: `bundle install`
+5. you will need to remove the test model: `rails d model test_model`
+6. run: `rails db:create && rails db:migrate`
+7. make sure to commit the removal of the test_model
+8. run rails s -b \`hostname -i\`
