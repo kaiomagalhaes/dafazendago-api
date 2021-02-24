@@ -8,6 +8,7 @@ class ProductsController < ApplicationController
         name: product.name,
         price: product.price,
         category: product.category.name,
+        Order: product.category.order,
         image: product.image.attached? ? url_for(product.image): nil
       }
     end
