@@ -6,8 +6,8 @@ ruby '2.7.2'
 
 gem 'rails', '~> 6.0.3'
 
+gem 'aws-sdk-s3', require: false
 gem 'rails_admin', '~> 2.0'
-gem "aws-sdk-s3", require: false
 
 gem 'gelf'
 gem 'pg', '~> 1.2'

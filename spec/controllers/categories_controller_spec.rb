@@ -13,7 +13,7 @@ RSpec.describe CategoriesController, type: :controller do
       Category.create(name: 'Doces', order: 1)
       Category.create(name: 'Queijos', order: 2)
       get :index
-      
+
       json_response = JSON.parse(response.body)
       expect(json_response).to eq([
                                     {
